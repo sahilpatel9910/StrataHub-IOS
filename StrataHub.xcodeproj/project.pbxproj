@@ -6,6 +6,10 @@
 	objectVersion = 90;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BABBC9FD305ED27200DA71B0 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = BABBC9FE305ED27200DA71B0 /* Supabase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		000000000000000000000120 /* StrataHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrataHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -35,6 +39,7 @@
 		000000000000000130000000 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				BABBC9FD305ED27200DA71B0 /* Supabase in Frameworks */,
 			);
 		};
 /* End PBXFrameworksBuildPhase section */
@@ -73,6 +78,9 @@
 				000000000000000000000010 /* StrataHub */,
 			);
 			name = StrataHub;
+			packageProductDependencies = (
+				BABBC9FE305ED27200DA71B0 /* Supabase */,
+			);
 			productName = MyApp;
 			productReference = 000000000000000000000120 /* StrataHub.app */;
 			productType = "com.apple.product-type.application";
@@ -272,7 +280,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyApp/Info.plist;
+				INFOPLIST_FILE = StrataHub/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = StrataHub;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -314,7 +322,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyApp/Info.plist;
+				INFOPLIST_FILE = StrataHub/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = StrataHub;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -378,6 +386,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BABBC9FE305ED27200DA71B0 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BABBC9FC305ED27100DA71B0 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 000000000000000000000000 /* Project object */;
 }
